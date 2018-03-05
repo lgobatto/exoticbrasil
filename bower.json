@@ -1,0 +1,34 @@
+{
+  "name": "exoticbrasil",
+  "description": "Exotic Brasil Website Development",
+  "main": "index.js",
+  "authors": [
+    "Leonardo Gobatto <lgobatto@lgobatto.eti.br>"
+  ],
+  "license": "MIT",
+  "homepage": "http://exoticbrasil.com.br",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "fancyBox": "https://github.com/fancyapps/fancyBox.git#3.0",
+    "foundation-sites": "^6.4.3"
+  },
+  "overrides": {
+    "fancyBox": {
+      "main": [
+        "./src/css/*.css",
+        "./src/js/*.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "jquery": "^3.2.1"
+  }
+}

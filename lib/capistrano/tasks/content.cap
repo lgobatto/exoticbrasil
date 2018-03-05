@@ -1,0 +1,56 @@
+namespace :uploads do
+
+  desc "Push any changed or new files from local to remote"
+  task :push do
+    invoke 'slack:started'
+    begin
+        run_locally do
+            roles(:all).each do |role|
+                    execute :rsync, "-avzO content/uploads/ #{role.user}@#{role.hostname}:#{shared_path}/content/uploads"
+              end
+        end
+        message = "Uploads push task successfully from local to #{fetch(:stage)} environment"
+        color = "good"
+        status = "Sucess"
+        invoke 'slack:finished'
+    rescue Exception => error
+        message = "Uploads push task failed from local to #{fetch(:stage)} environment"
+        color = "danger"
+        status = "Failed"
+        invoke 'slack:finished'
+    end
+    set :slack_summary, "#{message}"
+    set :slack_color, "#{color}"
+    set :slack_emoji, ":file_folder:"
+    set :slack_status, "#{status}"
+    set :slack_task, "Uploads push"
+    invoke "slack:notify"
+  end
+
+  desc "Pull any changed or new files from remote to local"
+  task :pull do
+    invoke 'slack:started'
+    begin
+        run_locally do
+            roles(:all).each do |role|
+                execute :rsync, "-avzO #{role.user}@#{role.hostname}:#{shared_path}/content/uploads/ content/uploads"
+            end
+        end
+        message = "Uploads pull task successfully from #{fetch(:stage)} to local environment"
+        color = "good"
+        status = "Sucess"
+        invoke 'slack:finished'
+    rescue Exception => error
+        message = "Uploads pull task failed from #{fetch(:stage)} to local environment"
+        color = "danger"
+        status = "Failed"
+        invoke 'slack:finished'
+    end
+    set :slack_summary, "#{message}"
+    set :slack_color, "#{color}"
+    set :slack_emoji, ":file_folder:"
+    set :slack_status, "#{status}"
+    set :slack_task, "Uploads pull"
+    invoke "slack:notify"
+  end
+end

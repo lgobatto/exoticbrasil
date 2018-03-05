@@ -1,0 +1,42 @@
+	/*	login-form-screen */	
+p{
+	position:relative !important;
+}
+body.login div#login h1 a,#login_error{
+	position:relative !important;
+}	
+
+.icon-ph {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	min-width: 16px;
+	padding: 4px 5px;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 20px;
+	text-align: center;
+	text-shadow: 0 1px 0 #ffffff;
+	background-color: transparent;
+	position:absolute;
+	left:6px;
+	top:4px;
+	bottom:3px;
+	z-index:3;
+}
+
+.custom-text {
+	padding:6px 6px 6px 30px ;
+}
+
+.input-container {
+	position:relative;
+}
+.cb-slideshow li span{
+	z-index:-1 !important;
+}
+
+/* social icon gap */
+.divsocial a {
+	margin: 2px;
+}

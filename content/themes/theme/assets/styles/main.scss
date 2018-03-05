@@ -1,0 +1,143 @@
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../../../../bower_components/foundation-sites/scss/foundation.scss";
+// endbower
+@import "custom_fonts";
+
+$theme-colors: (
+        yellow: #F6DA40,
+        blue: #3EC6ED,
+        green: #C8E9A0,
+        blue-green: #6DD3CE,
+        orange: #F7A278
+);
+$button-palette: map-merge($foundation-palette, $theme-colors);
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-thumbnail;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include add-foundation-colors;
+@include foundation-card;
+@include foundation-dropdown;
+
+.ult-ih-item .ult-ih-description-block .ult-ih-description, .ult-ih-item .ult-ih-description-block .ult-ih-description p, .ult-ih-item .ult-ih-heading-block, .ult-ih-item .ult-ih-heading-block h3.ult-ih-heading {
+  text-shadow: 0 0 rem-calc(0.3) #242424 !important;
+  font-weight: bold;
+}
+
+.google-map {
+  width: 100%;
+  height: 550px;
+  border: #ccc solid 1px;
+  margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.google-map img {
+  max-width: inherit !important;
+}
+
+body.header-stack:not(.template-slider) #Header {
+  min-height: auto;
+}
+
+.social, .social-menu {
+  li {
+    a {
+      font-size: rem-calc(24);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#Top_bar .menu > li a span {
+  text-shadow: 0 0 rem-calc(0.3) rgba(255, 255, 255, .7) !important;
+  font-weight: 500;
+}
+
+.idea_box, .ui-tabs, .accordion .question, .accordion .question.active .title, .accordion .question .title:before, .ui-tabs .ui-tabs-nav, .ui-tabs .ui-tabs-nav li, .tabs_vertical.ui-tabs .ui-tabs-panel, table th, table td, .list_item .circle, input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], select, textarea, .promo_box.has_border:after, dl > dt, dl > dd, .article_box .desc_wrapper p, a.icon_bar, a.content_link, .how_it_works .image, .opening_hours, .opening_hours .opening_hours_wrapper li, .icon_box.has_border:after, .chart_box:before, .pricing-box, .team_list .bq_wrapper, .post-footer .post-links, .format-link .post-title .icon-link, .share_wrapper, .post-header .title_wrapper, .section-post-related .section-related-adjustment, #comments > :first-child, .widget-area, .widget:after, .fixed-nav .desc h6, .portfolio_group.list .portfolio-item, .portfolio_group .portfolio-item .desc .details-wrapper, .Recent_posts ul li .desc h6, .widget_recent_entries ul li a, .woocommerce .widget_best_sellers li, .woocommerce .widget_featured_products li, .woocommerce .widget_recent_reviews li, .woocommerce .widget_recent_products li, .woocommerce .widget_recently_viewed_products li, .woocommerce .widget_random_products li, .woocommerce .widget_top_rated_products li, .woocommerce .widget_onsale li, .woocommerce .widget_layered_nav li, .woocommerce .widget_shopping_cart ul.product_list_widget li, .woocommerce .widget_products li, .woocommerce .product .related.products, .woocommerce .product .upsells.products, .woocommerce .product div.entry-summary h1.product_title:after, .woocommerce .quantity input.qty, .header-stack #Top_bar .logo, .offer_thumb .slider_pagination, .offer_thumb .slider_pagination a, .Latest_news ul li .desc_footer, .Latest_news ul li .photo, .offer_thumb.bottom .slider_pagination a, .style-simple .faq .question, .style-simple #Filters .filters_wrapper ul, #edd_checkout_cart th, #edd_checkout_cart td {
+  border-color: #FCDDCD;
+}
+
+#Action_bar .contact_details li.slogan {
+  font-size: rem-calc(12);
+}
+
+#Footer {
+  //border-top: 4px solid map-get($theme-colors, orange);
+  .widgets_wrapper {
+    border-top: 4px solid transparentize(map-get($theme-colors, orange), 0.45);
+    .widget {
+      h4 {
+        border-bottom: 1px solid transparentize(map-get($theme-colors, orange), 0.45);
+      }
+      #sb_instagram {
+        .sbi_meta span,
+        .sbi_follow_btn a {
+          font-weight: 600;
+          text-shadow: 0 0 rem-calc(0.1) rgba(0, 0, 0, .32);
+        }
+      }
+    }
+  }
+  .footer_copy {
+    .copyright {
+      font-weight: 600;
+    }
+  }
+  .footer_action {
+    border-top: 1px solid transparentize(map-get($theme-colors, orange), 0.45);
+    h3 {
+      font-weight: 500;
+      text-shadow: 0 0 rem-calc(0.1) rgba(255, 255, 255, .32);
+    }
+  }
+}
+
+.price {
+  p {
+    line-height: 1.2;
+    small {
+      color: #777777;
+    }
+  }
+}
+
+ul.products {
+  li.product {
+    .desc {
+      h4 {
+        color: #3ec6ed;
+        font-size: rem-calc(18);
+        a {
+          color: #3ec6ed;
+          &:hover {
+            color: darken(#3ec6ed, 0.3);
+          }
+        }
+      }
+      .price {
+        p {
+          font-size: rem-calc(16);
+        }
+      }
+    }
+    .button {
+      margin-top: 0;
+    }
+  }
+}

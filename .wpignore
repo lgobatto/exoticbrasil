@@ -1,0 +1,13 @@
+/lib
+/config
+/node_modules
+/vendor
+Capfile
+Gemfile
+Gemfile.lock
+readme.md
+.gitattributes
+.gitignore
+.gitmodules
+/puphpet
+Vagrantfile

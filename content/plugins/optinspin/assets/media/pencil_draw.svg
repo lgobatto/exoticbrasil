@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.5 122.5">
+  <title>pencil_draw</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="pencil">
+        <path d="M0,17.5V7C0,2.6,2.6,0,7,0H25.5c4.4,0,7,2.6,7,7V17.5Z" fill="#c20056"/>
+        <polygon points="8.59 114.25 23.91 114.25 16.25 122.5 8.59 114.25" fill="#c20056"/>
+        <polygon points="32.5 105 27.04 110.88 26.7 111.25 5.8 111.25 5.46 110.88 0 105 32.5 105" fill="#c20056"/>
+        <rect y="24.5" width="32.5" height="80.5" fill="#c20056"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+#Fields example {\"title\": \"\", \"value\": \"\", \"short\": false}
+
+namespace :slack do
+    desc "Notify action to Slack"
+    task :notify do
+      run_locally do
+        time_elapsed = Integer(fetch(:time_finished) - fetch(:time_started))
+        user = capture(:echo, "$(git config --get user.name) | tr -d '\n'")
+        email = capture(:echo, "$(git config --get user.email)  | tr -d '\n'")
+        channel = fetch(:slack_channel)
+        slack_username = fetch(:slack_username)
+        icon = fetch(:slack_emoji)
+        fallback = fetch(:slack_summary)
+        color = fetch(:slack_color)
+        pre = fetch(:slack_text)
+        url = fetch(:slack_url)
+        message = "#{fetch(:slack_summary)} in #{time_elapsed} seconds"
+        description = "{\"title\": \"Description:\", \"value\": \"#{message}\", \"short\": false}"
+        task = "{\"title\": \"Project:\", \"value\": \"#{fetch(:wp_sitename)}\", \"short\": true}"
+        status = "{\"title\": \"Status:\", \"value\": \"#{fetch(:slack_status)}\", \"short\": true}"
+        user_field = "{\"title\": \"User:\", \"value\": \"<mailto:#{email}|#{user}>\", \"short\": true}"
+        environment_field = "{\"title\": \"Environment:\", \"value\": \"<#{fetch(:stage_url)}|#{fetch(:stage)}>\", \"short\": true}"
+        fields = "#{description}, #{task}, #{status}, #{user_field}, #{environment_field}"
+        payload = "{\"channel\": \"#{channel}\", \"username\": \"#{fetch(:wp_sitename)} #{slack_username} #{fetch(:slack_task)}\", \"icon_emoji\": \"#{icon}\", \"attachments\": [{\"fallback\": \"#{fallback}\", \"color\": \"#{color}\", \"fields\": [#{fields}]}]}"
+        execute :curl, "-X POST --data-urlencode 'payload=#{payload}' #{url}"
+      end
+    end
+
+    desc "Set start time"
+    task :started do
+      run_locally do
+        set :time_started, Time.now.to_i
+      end
+    end
+
+    desc "Set end time"
+    task :finished do
+      run_locally do
+        set :time_finished, Time.now.to_i
+      end
+    end
+
+    desc "Deploy finished"
+    task :deploy_finished do
+      run_locally do
+        set :slack_summary, "Deploy successfully executed into #{fetch(:stage_url)}"
+        set :slack_color, "good"
+        set :slack_emoji, ":+1:"
+        set :slack_status, "Success"
+        set :slack_task, "Deploy"
+      end
+    end
+    before 'slack:deploy_finished', 'slack:finished'
+    after 'slack:deploy_finished', 'slack:notify'
+
+    desc "Deploy failed"
+    task :deploy_failed do
+      run_locally do
+        set :slack_summary, "Deploy execution failed into #{fetch(:stage_url)}"
+        set :slack_color, "danger"
+        set :slack_emoji, ":-1:"
+        set :slack_status, "Failed"
+        set :slack_task, "Deploy"
+      end
+    end
+    before 'slack:deploy_failed', 'slack:finished'
+    after 'slack:deploy_failed', 'slack:notify'
+
+    before 'deploy:starting', 'slack:started'
+    after 'deploy:finished', 'slack:deploy_finished'
+    after 'deploy:failed', 'slack:deploy_failed'
+
+end

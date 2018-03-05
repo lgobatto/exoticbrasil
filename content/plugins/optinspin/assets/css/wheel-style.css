@@ -1,0 +1,119 @@
+.woo-wheel-roll{width:70%;overflow:hidden;position:fixed;z-index:99999;background-color:#498d9d;overflow:hidden;box-shadow:0px 0px 10px #2d2d2d;padding:15px;}
+.woo-try_btn{background-color:#4c4c4c;color:white;width:9%;line-height:128px;position:fixed;top:42%;z-index:99999;}
+.woo-wheel-bg-img:before{width:100%;height:auto;content:"";position:absolute;opacity:0.5;z-index:-1;left:0px;}
+.woo-form{float:right;width:38%;margin-top:18%;margin-right:8%;}
+.woo-wheel-roll-bg{background-color:rgba(0, 0, 0, 0.78);width:100%;height:600px;position:fixed;top:0%;display:none;z-index:99999;}
+.optinspin-try-luck-btn.myButton{width:288px;margin-top:27%;}
+.optinspin-right{float:right;width:40%;padding:30px 0px;/*margin:20px 0px;*/}
+.optinspin-left{width:58%;float:left;}
+.optinspin-from{width:80%;}
+.optinspin-logo{margin:0 auto;display:block;overflow:hidden;padding:10px;}
+.optinspin-logo img{height:auto;max-width:100%;}
+.optinspin-try-luck-btn{background-color:#0c0c0c;text-align:center;color:white;font-size:20px;margin:80px auto;cursor:pointer;}
+.optinspin-from{width:100%;margin:20px auto;}
+.optinspin-from label{color:#f0f0f0;}
+.optinspin-sub-btn{text-align:center;}
+.optinspin-wheel-img-logo{position:absolute;margin:0 auto;width:100px;left:172px;top:40%;bottom:0px;left:0px;right:0px;}
+.optinspin-canvas{position:relative;}
+img.optinspin-wheel-logo{max-width:300px;max-height:60px !important;display:block;margin:0 auto;float:none;}
+.woo-the-wheel{background-image:url('../img/wheel_back.png');background-position:center;background-repeat:none;background-position-y:-17px;width:440px;background-position-x:-2px;background-repeat:no-repeat;float:left;margin-top:5%;}
+.woo-the-wheel{background-image:url('../img/wheel_back.png');background-position:center;background-repeat:none;background-position-y:-17px;width:100%;background-position-x:-2px;background-repeat:no-repeat;float:left;}
+.winning_lossing{padding:35px;color:black;margin:20px 10px;text-align:center;color:white;clear:both;font-family:'Fjalla One', Arial, sand-serif;margin:23px;font-size:20px;color:#2b2b2b;letter-spacing:0;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;line-height:32px;-webkit-transition:line-height .2s ease;transition:line-height .2s ease;border-radius:20px;display:none;}
+.optinspin-error{background-color:rgba(255, 2, 2, 0.34);border:solid 2px #d83c3c;border-radius:10px;color:white;padding:8px 10px;margin:0 51px;display:none;}
+.optinspin-try-luck-btn, .optinspin-form-btn{-webkit-border-radius:4px;border-radius:4px;display:inline-block;cursor:pointer;color:#ffffff !important;font-weight:bold;padding:10px 30px;text-decoration:none;text-shadow:0px 1px 3px #2f6627;box-shadow:1px 2px 2px #5d5d5d;width:100%;}
+.optinspin-try-luck-btn:active{position:relative;top:1px;}
+.optinspin-from .optinspin-form-field{height:34px;border-radius:3px;font-size:15px;width:100%;box-shadow:0px 0px 3px #525252;color:black;padding:5px 19px;background-color:white;border:1px solid #fff;outline:0;margin-bottom:4px;}
+.optinspin-from .optinspin-form-field.optinspin-error{border:solid 1px red;box-shadow:0px 0px 3px #ff6b6b;background-color:#fff7f8;}
+.toast{display:none;}
+.optinspin-add-to-cart, .optinspin-add-to-cart a{color:white;}
+.optinspin-add-to-cart{display:none;}
+.optinspin-privacy{text-align:right;bottom:13%;position:absolute;right:0%;}
+.optinspin-privacy a{color:white;margin:20px;font-size:12px;}
+.optinspin-cross-wrapper{position:absolute;top:2%;right:2%;cursor:pointer;}
+.optinspin-cross{color:white;height:32px;width:32px;background-color:rgba(212, 212, 212, 0.37);background-image:url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-22-128.png);background-repeat:no-repeat;background-size:32px;}
+.optinspin-cross-wrapper div{float:left;}
+.optinspin-cross-label{padding:2px 10px;color:white;}
+.optinspin-open-fortune{position:fixed;right:10px;bottom:10%;float:left;background-color:#f3f3f3;padding:15px;border-radius:10px;box-shadow:2px 2px 5px #e0e0e0;right:-230px;width:220px;cursor:pointer;border:solid 1px #CCC;}
+.optinspin-open-fortune .optinspin-fortune-text{color:black;font-size:20px;font-weight:bold;font-family:Fjalla One;line-height:70px;}
+.optinspin-open-fortune div{float:left;}
+.optinspin-open-fortune img{width:70px;}
+.optinspin-field-error{border:solid 3px #ff5c5c;box-shadow:0px 0px 5px #ab1313;background-color:#f9dee2;}
+canvas#world{position:absolute;top:0%;left:0;right:0;display:none;z-index:9999999;}
+#bottom_spin_icon{position:fixed;bottom:20px;right:20px;width:240px;height:auto;}
+#bottom_spin_icon .spin_icon_img img{width:70px;float:right;border-radius:50%;box-shadow:3px 5px 20px -1px rgba(0,0,0,0.3);-moz-box-shadow:3px 5px 20px -1px rgba(0,0,0,0.3);-webkit-box-shadow:3px 5px 20px -1px rgba(0,0,0,0.3);}
+#bottom_spin_icon .privy-floating-text{position:relative;vertical-align:bottom;font-size:16px;font-weight:700;color:#313437;overflow:hidden;max-width:100%;display:inline-block;}
+#bottom_spin_icon .spin_icon_text{float:left;display:inline-block;position:relative;bottom:0;background:white;text-align:center;line-height:1.7em;max-width:100%;border:1px solid rgba(0,0,0,0.18);bottom:11px;padding:10px 20px;border-radius:6px;box-shadow:-2px 5px 10px -2px rgba(0,0,0,0.16);-moz-box-shadow:-2px 5px 10px -2px rgba(0,0,0,0.16);-webkit-box-shadow:-2px 5px 10px -2px rgba(0,0,0,0.16);right: 7%;}
+.spin_icon_text{margin-top:22px;}
+#bottom_spin_icon .spin_icon_text:after{content:'';position:absolute;bottom:12px;border-top:10px transparent solid;border-bottom:10px transparent solid;right:-10px;border-right:none;border-left:10px white solid;}
+#bottom_spin_icon .spin_icon_text:before{right:-11px;border-right:none;border-left:11px rgba(0,0,0,0.18) solid;content:'';position:absolute;bottom:11px;border-top:11px transparent solid;border-bottom:11px transparent solid;}
+#bottom_spin_icon{cursor:pointer;}
+#optinspin-simple-btn{background-color:#f1c40f;color:#ffffff;border:none;}
+.optinspin-notify-field{position:relative;background-color:#313131;border-radius:5px;padding:5px;box-shadow:0px 0px 5px #6b6b6b;color:#ffffff;line-height:30px;font-size:13px;text-align:center;}
+.optinspin-notify-field:after{content:'';position:absolute;top:100%;left:95%;margin-left:-50%;width:0;height:0;border-top:solid 10px #313131;border-left:solid 10px transparent;border-right:solid 10px transparent;}
+@keyframes lds-rolling{0%{-webkit-transform:translate(-50%, -50%) rotate(0deg);transform:translate(-50%, -50%) rotate(0deg);}
+100%{-webkit-transform:translate(-50%, -50%) rotate(360deg);transform:translate(-50%, -50%) rotate(360deg);}
+}
+@-webkit-keyframes lds-rolling{0%{-webkit-transform:translate(-50%, -50%) rotate(0deg);transform:translate(-50%, -50%) rotate(0deg);}
+100%{-webkit-transform:translate(-50%, -50%) rotate(360deg);transform:translate(-50%, -50%) rotate(360deg);}
+}
+.lds-rolling{position:relative;}
+.lds-rolling div,
+.lds-rolling div:after{position:absolute;width:86px;height:86px;border:6px solid #5d5d5d;border-top-color:transparent;border-radius:50%;}
+.lds-rolling div{-webkit-animation:lds-rolling 0.8s linear infinite;animation:lds-rolling 0.8s linear infinite;top:100px;left:100px;}
+.lds-rolling div:after{-webkit-transform:rotate(90deg);transform:rotate(90deg);}
+.lds-rolling{width:200px !important;height:200px !important;-webkit-transform:translate(-100px, -100px) scale(1) translate(100px, 100px);transform:translate(-100px, -100px) scale(1) translate(100px, 100px);}
+.lds-css.ng-scope{position:absolute;bottom:46%;right:14%;display:none;}
+.optinspin-from div{margin:10px;}
+a.optinspin-add-coupon{color:rgb(17, 17, 17);padding:8px;line-height:1.5em;max-width:inherit;margin-top:20px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;border-radius:3px;text-transform:uppercase;text-align:center;cursor:pointer;font-size:16px;color:white;font-weight:bold;}
+.optinspin-decline-coupon a{color:#f97352;font-size:14px;}
+.optinspin-win-info{font-size:12px;font-weight:100;font-family:sans-serif;background-color:#30a043;margin:10px;padding:10px;line-height:15px;}
+.optinspin-optin-bar{display:none;background-color:red;width:100%;color:white;font-weight:bold;padding:8px;text-align:center;position:fixed;z-index:999999;bottom:0px;font-size:14px;box-shadow:0px 0px 4px #ababab;}
+svg:not(:root){overflow:visible !important;}
+#bottom_spin_icon{z-index:2222;}
+#bottom_spin_icon{width: auto;display: inline-flex;}
+.woo-wheel-roll{z-index:999999;}
+.optinspin-add-to-cart{background-color:black;margin:10px;}
+@media only screen and (max-width:480px){div#optinspin-content{padding:20px!important;}
+.optinspin-cross-wrapper{right:10%!important;}
+.optinspin-privacy{top:14px;right:inherit;left:0!important;}
+
+    .woo-wheel-roll {
+        overflow: scroll;
+    }
+
+    @-moz-document url-prefix() {
+        .woo-wheel-roll {
+            overflow: hidden;
+        }
+        .optinspin-right {
+            overflow: scroll;
+        }
+    }
+/*.wheelContainer{top:180px!important;}*/
+}
+.optinspin-right {
+    overflow: auto;
+}
+.optinspin-decline-coupon span{margin:10px;font-size:14px;}
+.optinspin-btn a{font-weight:100 !important;}
+.optinspin-optin-bar span.cancel{cursor:pointer;font-weight:100;padding: 0px 4px;border-radius: 4px; top: 10px;right: 25px;position:absolute}
+.optinspin-optin-bar span#coupon-expire-date{cursor:pointer;font-weight:100;}
+span.exp-time {
+    padding: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+    font-weight: 100;
+    border-radius: 5px;
+}
+span.optinspin-congo{padding-right:40px;}
+div#optinspin-content {padding: 0px 0px 0px 10px !important;}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .optinspin-canvas {
+        height: 500px;
+    }
+}
+
+.wheelContainer {
+    opacity:0;
+}

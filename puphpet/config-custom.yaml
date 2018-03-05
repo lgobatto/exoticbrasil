@@ -1,0 +1,28 @@
+vagrantfile:
+  vm:
+    provider:
+      local:
+        machines:
+          machine_box:
+            id: exoticbrasil.dev
+            hostname: exoticbrasil.dev
+            network:
+              private_network: 192.168.55.124
+nginx:
+  vhosts:
+    development_host:
+      server_name: exoticbrasil.dev
+      server_aliases:
+        - www.exoticbrasil.dev
+
+mariadb:
+  users:
+    db_user_1:
+        name: exoticbrasil.dev
+        password: '123'
+  databases:
+      db_1:
+          name: exoticbrasil.dev
+  grants:
+      grants_1:
+          user: exoticbrasil.dev

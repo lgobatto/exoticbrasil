@@ -1,0 +1,48 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "bower": [
+        "fancyBox",
+        "foundation-sites",
+        "Scrollify"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "bower": [
+        "fancyBox",
+        "foundation-sites",
+        "Scrollify"
+      ],
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": [
+        "jquery"
+      ]
+    },
+    "fonts": {
+      "bower": [
+        "font-awesome"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "http://www.cfhp.dev"
+  },
+  "paths": {
+    "source": "./content/themes/theme/assets/",
+    "dist": "./content/themes/theme/dist/"
+  }
+}

@@ -1,0 +1,316 @@
+.peg, .wheelSVG {
+    visibility: hidden;
+}
+
+
+/*.wheelContainer, body, html {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+.wheelContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.centerCircle, .valueContainer, .wheelOutline, .wheelText {
+    pointer-events: none;
+}
+
+/*.toast, .wheelContainer, body, html {*/
+    /*text-align: center;*/
+/*}*/
+
+.toast, .wheelContainer {
+    text-align: center;
+}
+
+.wheelContainer {
+    transform: translate(-50%, 0);
+}
+
+.toast, .wheelContainer button {
+    position: absolute;
+    background-color: #E81D62;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.wheelContainer {
+    position: absolute;
+    max-width: 1000px;
+    /* margin-left: auto;
+     margin-right: auto;*/
+    left: 0%;
+    margin-top: 5%;
+    top: 60px;
+}
+
+.wheelSVG {
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: auto;
+}
+
+.wheelText {
+    text-anchor: middle;
+    font-family: 'Fjalla One', Arial, sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.toast {
+    border-radius: 12px;
+    opacity: 0;
+}
+
+.toast p {
+    clear: both;
+    font-family: 'Fjalla One', Arial, sand-serif;
+    margin: 23px;
+    font-size: 30px;
+    color: #ededed;
+    letter-spacing: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 32px;
+    -webkit-transition: line-height .2s ease;
+    transition: line-height .2s ease;
+}
+
+/*button {*/
+    /*left: 50%;*/
+    /*width: 80%;*/
+    /*top: 20px;*/
+    /*max-width: 400px;*/
+    /*padding: 20px;*/
+    /*font-weight: 700;*/
+    /*font-size: 32px;*/
+    /*color: #ededed;*/
+    /*border-radius: 6px;*/
+    /*border: none;*/
+    /*box-shadow: 0 2px 0 #D71559;*/
+    /*cursor: pointer;*/
+    /*font-family: "Fjalla One", Helvetica, Arial, sans-serif;*/
+/*}*/
+
+.wheelContainer button {
+    left: 50%;
+    width: 80%;
+    top: 20px;
+    max-width: 400px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #ededed;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 2px 0 #D71559;
+    cursor: pointer;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+}
+
+#optinspin-simple-btn {
+
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .woo-wheel-roll {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .optinspin-optin-bar span#coupon-expire-date {
+        position: relative !important;
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .woo-wheel-bg-img:before {
+        bottom:0px !important;
+    }
+
+    .optinspin-optin-bar {
+        width: auto !important;
+    }
+
+    .optinspin-optin-bar span.cancel{
+        right: 0px;
+       /* bottom: 17px;
+        margin:0px 0px;
+        right: 25px;
+        float:left;*/
+    }
+
+    .optinspin-left {
+
+        width: 50%;
+
+    }
+
+    .optinspin-right {
+
+        width: 50%;
+
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .optinspin-left {
+        width: 100%;
+        position: relative;
+        /*bottom: 18%;*/
+        margin: 0 auto;
+    }
+
+    .optinspin-from{
+        width:100%;
+        margin:20px auto;
+    }
+
+    .wheelContainer {
+       /* width: 400px;
+        top: 550px !important;*/
+        position: relative;
+        transform: translate(0%, 0);
+    }
+    .optinspin-right {
+        width: 100%;
+    }
+
+    .optinspin-right {
+        /*padding: 0px 0px;
+        margin: 20px 15px;*/
+    }
+
+    .woo-wheel-roll {
+        padding:0px;
+    }
+
+    .toast p, .toast span {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    .toast p, .toast span {
+        font-size: 38px;
+        line-height: 38px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .toast p, .toast span {
+          font-size: 58px;
+          line-height: 60px;
+        font-size: 26px;
+        line-height: 49px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .toast p, .toast span {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    .wheelContainer button {
+        font-size: 22px;
+        padding: 10px;
+        width: 40%;
+    }
+
+
+}
+
+.wheelContainer button:focus {
+    outline: 0;
+}
+
+.woo-wheel-roll {
+    visibility: hidden;
+}
+
+.optinspin-click-btn.hide {
+    display:none !important;
+}
+
+.optinspin-rotate-mob {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999999999;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+.optinspin-rotate-mob img {
+    width: 80px;
+}
+
+.optinsin-rotote-content {
+    position: absolute;
+    top: 35%;
+    bottom: 0px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+}
+
+.wheelContainer {
+    left: -8%;
+}
+
+
+
+
+/* snowflake css */
+
+#snowflakeContainer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    z-index:-1;
+}
+.snowflake {
+	padding-left: 15px;
+	font-family: Cambria, Georgia, serif;
+	font-size: 14px;
+	line-height: 24px;
+	position: fixed;
+	color: #FFFFFF;
+	user-select: none;
+	z-index: 1000;
+}
+.snowflake:hover {
+	cursor: default;
+}

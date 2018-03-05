@@ -1,0 +1,31 @@
+{
+  "name": "lgobatto/exoticbrasil",
+  "description": "Exotic Brasil Website Development",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leonardo Gobatto",
+      "email": "lgobatto@lgobatto.eti.br"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "johnpbloch/wordpress": "4.9.4"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "extra": {
+    "wordpress-install-dir": "app",
+    "installer-paths": {
+      "content/mu-plugins/{$name}/": [
+        "vendor:veraroca-plugins"
+      ]
+    }
+  }
+}

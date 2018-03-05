@@ -1,0 +1,87 @@
+/*
+canvas#canvas {
+    float: right;
+    position: absolute;
+    right: -10%;
+    top: 30%;
+}
+
+img#spin_button {
+    position: absolute;
+    right: 5%;
+}
+*/
+
+.optinspin_mailchimp_label_class {
+    background-color: #efefef !important;
+    border-top: solid 1px #afafaf !important;
+    box-shadow: 0px 2px 1px #CCC;
+}
+
+
+.optinspin_remarkety_label_class {
+    background-color: #efefef !important;
+    border-top: solid 1px #afafaf !important;
+    box-shadow: 0px 2px 1px #CCC;
+}
+
+
+.optinspin_active_campaign_label_class {
+    background-color: #efefef !important;
+    border-top: solid 1px #afafaf !important;
+    box-shadow: 0px 2px 1px #CCC;
+}
+
+.pages-suggestion {
+    background-color: white;
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    width: 96%;
+    border: solid 1px #CCC;
+    overflow-y: scroll;
+}
+
+.pages-suggestion ul li {
+    border-bottom: solid 1px #CCC;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.pages-suggestion ul li:hover {
+    background-color: rgba(128, 128, 128, 0.16);
+}
+
+.optinspin_zapier_label_class, .optinspin_drip_label_class {
+    background-color: #efefef !important;
+    border-top: solid 1px #afafaf !important;
+    box-shadow: 0px 2px 1px #CCC;
+}
+
+.custom_class_mailsteractive{
+	display:none;
+}
+
+.optinspin_mailster_label_class {
+    background-color: #efefef !important;
+    border-top: solid 1px #afafaf !important;
+    box-shadow: 0px 2px 1px #CCC;
+}
+
+.pages-boxes .page-name span {
+    font-size: 14px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.pages-boxes .page-name {
+    background-color: #fbfbfb;
+    border: solid 1px #CCC;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+}
+
+.pages-boxes span.post-id {
+    display: none;
+}

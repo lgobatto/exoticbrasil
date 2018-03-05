@@ -1,0 +1,38 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+.idea
+
+# Wordpress files #
+###################
+.htaccess
+xmlrpc.php
+sitemap.xml
+sitemap.xml.gz
+readme.html
+license.txt
+content/uploads/*
+content/upgrade/*
+content/cache/*
+content/backup/*
+wp-config.php
+product_images/
+
+# Misc #
+###################
+.vagrant
+_assets
+node_modules
+bower_components
+ai-cache/*
+/config
+/vendor
+/app
+/content/mu-plugins/*/
+content/themes/**/dist

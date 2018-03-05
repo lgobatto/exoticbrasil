@@ -1,0 +1,24 @@
+/*----------------------------------------------------------------------------*\
+	TEXTBLOCK SHORTCODE
+\*----------------------------------------------------------------------------*/
+.mpc-textblock {
+	display: block;
+
+	&.mpc-inline {
+		display: inline-block;
+	}
+
+	h1, h2, h3, h4, h5, h6,
+	a, span, div {
+		font: inherit;
+		text-align: inherit;
+		color: inherit;
+	}
+
+	p:first-child {
+		margin-top: 0;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}

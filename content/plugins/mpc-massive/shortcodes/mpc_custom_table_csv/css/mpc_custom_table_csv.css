@@ -1,0 +1,17 @@
+/*----------------------------------------------------------------------------*	CUSTOM TABLE SHORTCODE
+\*----------------------------------------------------------------------------*/
+.mpc-custom-table table { width: 100%; }
+
+.mpc-custom-table th:first-child { width: 60%; }
+
+.mpc-custom-table th { padding: 10px; border-bottom: 2px solid #bbbbbb; }
+
+.mpc-custom-table td { padding: 7px 10px; }
+
+.mpc-custom-table td:not(:last-child) { border-right: 1px solid #cccccc; }
+
+.mpc-custom-table td.align-left, .mpc-custom-table th.align-left { text-align: left !important; }
+
+.mpc-custom-table td.align-right, .mpc-custom-table th.align-right { text-align: right !important; }
+
+.mpc-custom-table td.align-center, .mpc-custom-table th.align-center { text-align: center !important; }
